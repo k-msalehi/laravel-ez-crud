@@ -1,0 +1,48 @@
+{
+  "name": "k-msalehi/laravel-ez-crud",
+  "description": "Simple CRUD generator for your laravel application",
+  "keywords": [
+    "crud",
+    "crud-generator",
+    "laravel-crud",
+    "laravel-ez-crud"
+  ],
+  "homepage": "https://github.com/k-msalehi/laravel-ez-crud",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Mohammad Salehi Koleti",
+      "email": "msalehid97@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "laravel/framework": "7.*|8.*|9.*|10.*"
+  },
+  "require-dev": {
+    
+  },
+  "autoload": {
+    "psr-4": {
+      "KMsalehi\\LaravelEzCrud\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "KMsalehi\\LaravelEzCrud\\Tests\\": "tests/",
+      "App\\": "vendor/orchestra/testbench-core/laravel/app"
+    }
+  },
+  "scripts": {
+    "test": "clear && vendor/bin/phpunit --process-isolation --colors=always",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "KMsalehi\\LaravelEzCrud\\EzCrudServiceProvider"
+      ]
+    }
+  }
+}
