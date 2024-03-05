@@ -6,7 +6,7 @@ Now you can add `--views` option to create related views,
 e.g. `php artisan make:crud UserController --model=User --views`  
 *Created view files are based on bootstrap 5*
 
-By defualt, view files extends from `layouts.app`; To customize them you can use  
+By defualt, view files extend from `layouts.app`; To customize them you can use  
 `php artisan vendor:publish --provider="KMsalehi\LaravelEzCrud\EzCrudServiceProvider"`
 
 
